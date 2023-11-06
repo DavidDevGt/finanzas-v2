@@ -31,20 +31,19 @@
 </div>
 
 <script>
-    // JavaScript
-    function togglePassword() {
-        const password = document.getElementById('inputPassword');
-        const toggleIcon = document.getElementById('togglePasswordIcon');
-        if (password.type === 'password') {
-            password.type = 'text';
-            toggleIcon.classList.remove('bi-eye-slash');
-            toggleIcon.classList.add('bi-eye');
-        } else {
-            password.type = 'password';
-            toggleIcon.classList.remove('bi-eye');
-            toggleIcon.classList.add('bi-eye-slash');
-        }
-    }
+    $(document).ready(function() {
+        $('#button-addon2').click(function() {
+            var passwordField = $('#inputPassword');
+            var passwordIcon = $('#togglePasswordIcon');
+            if (passwordField.attr('type') == 'password') {
+                passwordField.attr('type', 'text');
+                passwordIcon.removeClass('bi-eye-slash').addClass('bi-eye');
+            } else {
+                passwordField.attr('type', 'password');
+                passwordIcon.removeClass('bi-eye').addClass('bi-eye-slash');
+            }
+        });
+    });
 </script>
 
 <?php require_once __DIR__ . '/../footer.php'; ?>

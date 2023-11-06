@@ -39,4 +39,5 @@
 </head>
 
 <body>
-    <!-- Aquí comienza el contenido de tu página -->
+    <!-- Contenedor Principal -->
+    <div id="app" class="min-vh-100 d-flex justify-content-center align-items-center">
