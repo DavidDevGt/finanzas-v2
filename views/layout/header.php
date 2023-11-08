@@ -27,7 +27,15 @@
     <script src="../assets/js/jquery-3.7.1.min.js"></script>
 
     <!-- Iconos -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- DataTables -->
+    <link rel="stylesheet" href="../assets/css/datatables.min.css">
+    <script src="../assets/js/datatables.min.js"></script>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     <!-- Open Graph para compartir en redes sociales -->
     <meta property="og:title" content="FinanzApp - Gestión de Finanzas Personales">
@@ -40,4 +48,4 @@
 
 <body>
     <!-- Contenedor Principal -->
-    <div id="app" class="min-vh-100 d-flex justify-content-center align-items-center">
+    <div id="app" class="min-vh-100 d-flex justify-content-center align-items-center bg-light">
