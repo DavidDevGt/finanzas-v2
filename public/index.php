@@ -1,11 +1,10 @@
 <?php
-require_once __DIR__ . '/vendor/autoload.php';
-
+require_once __DIR__ . '/../vendor/autoload.php';
 $router = new AltoRouter();
 
-$router->setBasePath('/finanzas-v2');
+$router->setBasePath('/finanzas-v2/public');
 
-require_once __DIR__ . '/routes/router.php'; // Carga las rutas
+require_once __DIR__ . '/../routes/router.php';
 
 $match = $router->match();
 

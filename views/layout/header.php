@@ -14,17 +14,17 @@
     <title>FinanzApp - Gestión de Finanzas Personales</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
 
     <!-- Chart.js -->
-    <script src="assets/js/chart.min.js"></script>
+    <script src="../assets/js/chart.min.js"></script>
 
     <!-- Day.js -->
-    <script src="assets/js/dayjs.min.js"></script>
+    <script src="../assets/js/dayjs.min.js"></script>
 
     <!-- jQuery -->
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
 
     <!-- Iconos -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">

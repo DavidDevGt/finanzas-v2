@@ -2,7 +2,7 @@
 
 // Home page
 $router->map('GET', '/', function() {
-    require __DIR__ . '/../views/home.php'; // Asumiendo que tienes una vista 'home.php'
+    require __DIR__ . '/../home.php';
 });
 
 // Login page
@@ -17,7 +17,7 @@ $router->map('GET', '/register', function() {
 
 // Dashboard page
 $router->map('GET', '/dashboard', function() {
-    require __DIR__ . '/../views/dashboard/dashboard.php';
+    require __DIR__ . '/../views/dashboard/index.php';
 });
 
 // Otras rutas aquí...

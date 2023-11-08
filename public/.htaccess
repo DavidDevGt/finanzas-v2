@@ -1,5 +1,5 @@
 RewriteEngine On
-RewriteBase /finanzas-v2/
+RewriteBase /finanzas-v2/public/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . index.php [L]
+RewriteRule ^ index.php [QSA,L]
