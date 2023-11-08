@@ -1,8 +1,8 @@
-CREATE DATABASE finanzas_personales;
+CREATE DATABASE IF NOT EXISTS finanzas_personales;
 USE finanzas_personales;
 
 -- Usuarios
-CREATE TABLE usuarios (
+CREATE TABLE IF NOT EXISTS usuarios (
     id_usuario INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL,
     correo VARCHAR(100) NOT NULL UNIQUE,
@@ -13,7 +13,7 @@ CREATE TABLE usuarios (
 );
 
 -- Categorías
-CREATE TABLE categorias (
+CREATE TABLE IF NOT EXISTS categorias (
     id_categoria INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL,
     fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -21,7 +21,7 @@ CREATE TABLE categorias (
 );
 
 -- Subcategorías
-CREATE TABLE subcategorias (
+CREATE TABLE IF NOT EXISTS subcategorias (
     id_subcategoria INT AUTO_INCREMENT PRIMARY KEY,
     id_categoria INT NOT NULL,
     nombre VARCHAR(50) NOT NULL,
@@ -31,7 +31,7 @@ CREATE TABLE subcategorias (
 );
 
 -- Transacciones
-CREATE TABLE transacciones (
+CREATE TABLE IF NOT EXISTS transacciones (
     id_transaccion INT AUTO_INCREMENT PRIMARY KEY,
     id_usuario INT NOT NULL,
     id_categoria INT,
@@ -47,7 +47,7 @@ CREATE TABLE transacciones (
 );
 
 -- Presupuestos
-CREATE TABLE presupuestos (
+CREATE TABLE IF NOT EXISTS presupuestos (
     id_presupuesto INT AUTO_INCREMENT PRIMARY KEY,
     id_usuario INT NOT NULL,
     id_categoria INT NOT NULL,
@@ -62,7 +62,7 @@ CREATE TABLE presupuestos (
 );
 
 -- Metas de Ahorro
-CREATE TABLE metas_ahorro (
+CREATE TABLE IF NOT EXISTS metas_ahorro (
     id_meta INT AUTO_INCREMENT PRIMARY KEY,
     id_usuario INT NOT NULL,
     nombre VARCHAR(100) NOT NULL,
@@ -77,7 +77,7 @@ CREATE TABLE metas_ahorro (
 );
 
 -- Inversiones
-CREATE TABLE inversiones (
+CREATE TABLE IF NOT EXISTS inversiones (
     id_inversion INT AUTO_INCREMENT PRIMARY KEY,
     id_usuario INT NOT NULL,
     tipo VARCHAR(50) NOT NULL,
@@ -92,7 +92,7 @@ CREATE TABLE inversiones (
 );
 
 -- Deudas
-CREATE TABLE deudas (
+CREATE TABLE IF NOT EXISTS deudas (
     id_deuda INT AUTO_INCREMENT PRIMARY KEY,
     id_usuario INT NOT NULL,
     nombre VARCHAR(100) NOT NULL,
@@ -107,7 +107,7 @@ CREATE TABLE deudas (
 );
 
 -- Recordatorios
-CREATE TABLE recordatorios (
+CREATE TABLE IF NOT EXISTS recordatorios (
     id_recordatorio INT AUTO_INCREMENT PRIMARY KEY,
     id_usuario INT NOT NULL,
     titulo VARCHAR(100) NOT NULL,
